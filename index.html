@@ -1,107 +1,139 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Denah Kelas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Denah Kelas X TKJ - B</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #0d1117;
+      color: #fff;
       margin: 0;
-      background: #0f172a;
-      color: #f1f5f9;
-    }
-    header {
+      padding: 0;
       text-align: center;
-      padding: 20px;
-      background: #1e293b;
     }
-    header h1 {
+
+    header {
+      padding: 20px;
+    }
+
+    h1 {
+      margin: 10px 0 5px;
+    }
+
+    h2 {
+      font-weight: normal;
+      color: #aaa;
       margin: 0;
     }
-    .container {
+
+    /* Kotak Wali Kelas */
+    .wali-kelas {
+      display: flex;
+      justify-content: center;
+      margin: 20px auto;
+    }
+
+    .wali-box {
+      background-color: #1f2937;
+      padding: 15px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    /* Grid untuk siswa */
+    .grid {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
-      grid-gap: 15px;
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
+      gap: 15px;
+      max-width: 800px;
+      margin: 0 auto;
     }
-    .desk {
-      background: #1f2937;
-      border: 1px solid #334155;
-      border-radius: 10px;
-      text-align: center;
-      padding: 20px 5px;
-      font-weight: bold;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    }
-    .teacher {
-      grid-column: span 6;
-      background: #2563eb;
-      color: white;
-    }
-    footer {
-      text-align: center;
+
+    .siswa {
+      background-color: #1f2937;
       padding: 15px;
-      font-size: 0.9em;
-      background: #1e293b;
-      margin-top: 20px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .siswa .nomor {
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 5px;
+    }
+
+    footer {
+      margin-top: 30px;
+      padding: 10px;
+      background: #161b22;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Denah Kelas X TKJ - B</h1>
-    <p>Tata Letak Meja X TKJ - B</p>
+    <h2>Tata Letak Meja X TKJ - B</h2>
   </header>
 
-  <main>
-    <div class="container">
-      <div class="teacher">Fitri Romauli Tapanao</div>
-      <div class="desk">Windy</div>
-      <div class="desk">Nanda</div>
-      <div class="desk">Nisa</div>
-      <div class="desk">Dinda</div>
-      <div class="desk">Putry</div>
-      <div class="desk">6</div>
+  <!-- Kotak Wali Kelas -->
+  <div class="wali-kelas">
+    <div class="wali-box">Wali Kelas: Fitri Romauli Tapanao</div>
+  </div>
 
-      <div class="desk">7</div>
-      <div class="desk">Yumeko</div>
-      <div class="desk">Mawardah</div>
-      <div class="desk">Valeysia</div>
-      <div class="desk">Nadia</div>
-      <div class="desk">Citra</div>
+  <!-- Grid siswa -->
+  <div class="grid">
+    <!-- Contoh 36 siswa dengan nomor -->
+    <div class="siswa">Windy <div class="nomor">1</div></div>
+    <div class="siswa">Nanda <div class="nomor">2</div></div>
+    <div class="siswa">Nisa <div class="nomor">3</div></div>
+    <div class="siswa">Dinda <div class="nomor">4</div></div>
+    <div class="siswa">Putry <div class="nomor">5</div></div>
+    <div class="siswa">Citra <div class="nomor">6</div></div>
 
-      <div class="desk">Juwita</div>
-      <div class="desk">Naura</div>
-      <div class="desk">Syifa</div>
-      <div class="desk">Novi</div>
-      <div class="desk">Rahmat</div>
-      <div class="desk">Risky</div>
+    <div class="siswa">Yumeko <div class="nomor">7</div></div>
+    <div class="siswa">Mawardah <div class="nomor">8</div></div>
+    <div class="siswa">Valeysia <div class="nomor">9</div></div>
+    <div class="siswa">Nadia <div class="nomor">10</div></div>
+    <div class="siswa">Juwita <div class="nomor">11</div></div>
+    <div class="siswa">Naura <div class="nomor">12</div></div>
 
-      <div class="desk">Fadil</div>
-      <div class="desk">Bagus</div>
-      <div class="desk">Zelvin</div>
-      <div class="desk">Zevanya</div>
-      <div class="desk">Ellgada</div>
-      <div class="desk">Atalah</div>
+    <div class="siswa">Syifa <div class="nomor">13</div></div>
+    <div class="siswa">Novi <div class="nomor">14</div></div>
+    <div class="siswa">Rahmat <div class="nomor">15</div></div>
+    <div class="siswa">Risky <div class="nomor">16</div></div>
+    <div class="siswa">Fadil <div class="nomor">17</div></div>
+    <div class="siswa">Bagus <div class="nomor">18</div></div>
 
-      <div class="desk">Giezka</div>
-      <div class="desk">Wisnu</div>
-      <div class="desk">Kevin</div>
-      <div class="desk">Quen</div>
-      <div class="desk">Ledis</div>
-      <div class="desk">Gatau</div>
+    <div class="siswa">Zelvin <div class="nomor">19</div></div>
+    <div class="siswa">Zevanya <div class="nomor">20</div></div>
+    <div class="siswa">Ellgada <div class="nomor">21</div></div>
+    <div class="siswa">Atalah <div class="nomor">22</div></div>
+    <div class="siswa">Glezka <div class="nomor">23</div></div>
+    <div class="siswa">Wisnu <div class="nomor">24</div></div>
 
-      <div class="desk">Bella</div>
-      <div class="desk">Silvi</div>
-      <div class="desk">Fitri</div>
-      <div class="desk">Hafiza</div>
-      <div class="desk">Amelia</div>
-      <div class="desk">Risty</div>
-    </div>
-  </main>
+    <div class="siswa">Kevin <div class="nomor">25</div></div>
+    <div class="siswa">Quen <div class="nomor">26</div></div>
+    <div class="siswa">Ledis <div class="nomor">27</div></div>
+    <div class="siswa">Gatau <div class="nomor">28</div></div>
+    <div class="siswa">Bella <div class="nomor">29</div></div>
+    <div class="siswa">Silvi <div class="nomor">30</div></div>
+
+    <div class="siswa">Fitri <div class="nomor">31</div></div>
+    <div class="siswa">Hafiza <div class="nomor">32</div></div>
+    <div class="siswa">Amelia <div class="nomor">33</div></div>
+    <div class="siswa">Risty <div class="nomor">34</div></div>
+    <div class="siswa">Nama 35 <div class="nomor">35</div></div>
+    <div class="siswa">Nama 36 <div class="nomor">36</div></div>
+  </div>
 
   <footer>
     © 2025 Denah Kelas X TKJ - B – Dibuat Oleh Zelvin
