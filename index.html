@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Denah Kelas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #0f172a;
+      color: #f1f5f9;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background: #1e293b;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 15px;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .desk {
+      background: #1f2937;
+      border: 1px solid #334155;
+      border-radius: 10px;
+      text-align: center;
+      padding: 20px 5px;
+      font-weight: bold;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    .teacher {
+      grid-column: span 5;
+      background: #2563eb;
+      color: white;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      background: #1e293b;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Denah Kelas</h1>
+    <p>Contoh Tata Letak Meja Siswa</p>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="teacher">Guru</div>
+      <div class="desk">A1</div>
+      <div class="desk">A2</div>
+      <div class="desk">A3</div>
+      <div class="desk">A4</div>
+      <div class="desk">A5</div>
+
+      <div class="desk">B1</div>
+      <div class="desk">B2</div>
+      <div class="desk">B3</div>
+      <div class="desk">B4</div>
+      <div class="desk">B5</div>
+
+      <div class="desk">C1</div>
+      <div class="desk">C2</div>
+      <div class="desk">C3</div>
+      <div class="desk">C4</div>
+      <div class="desk">C5</div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Denah Kelas X TKJ - B – Dibuat Oleh Zelvin
+  </footer>
+</body>
+</html>
