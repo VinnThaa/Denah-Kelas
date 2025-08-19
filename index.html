@@ -19,31 +19,13 @@
     header h1 {
       margin: 0;
     }
-    .layout {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 20px;
-      padding: 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .labels {
-      display: grid;
-      grid-template-rows: repeat(7, auto);
-      gap: 15px;
-      margin-top: 58px; /* biar sejajar dengan kotak wali kelas */
-    }
-    .labels .num {
-      text-align: center;
-      font-weight: bold;
-      padding: 10px;
-      color: #94a3b8;
-    }
     .container {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
       grid-gap: 15px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
     }
     .desk {
       background: #1f2937;
@@ -53,107 +35,6 @@
       padding: 20px 5px;
       font-weight: bold;
       box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    }
-    .wali-kelas {
-      grid-column: span 6;
-      background: #1f2937;
-      border: 2px solid #334155;
-      border-radius: 8px;
-      text-align: center;
-      padding: 20px;
-      font-weight: bold;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      font-size: 0.9em;
-      background: #1e293b;
-      margin-top: 20px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Denah Kelas</h1>
-    <p>Tata Letak Meja untuk 36 Siswa</p>
-  </header>
-
-  <main>
-    <div class="layout">
-      <!-- Label Kiri -->
-      <div class="labels">
-        <div class="num">1</div>
-        <div class="num">7</div>
-        <div class="num">13</div>
-        <div class="num">19</div>
-        <div class="num">25</div>
-        <div class="num">31</div>
-      </div>
-
-      <!-- Denah -->
-      <div class="container">
-        <div class="wali-kelas">Wali Kelas: Fitri Romauli Tapanao</div>
-        <!-- Baris 1 -->
-        <div class="desk">1</div>
-        <div class="desk">2</div>
-        <div class="desk">3</div>
-        <div class="desk">4</div>
-        <div class="desk">5</div>
-        <div class="desk">6</div>
-        <!-- Baris 2 -->
-        <div class="desk">7</div>
-        <div class="desk">8</div>
-        <div class="desk">9</div>
-        <div class="desk">10</div>
-        <div class="desk">11</div>
-        <div class="desk">12</div>
-        <!-- Baris 3 -->
-        <div class="desk">13</div>
-        <div class="desk">14</div>
-        <div class="desk">15</div>
-        <div class="desk">16</div>
-        <div class="desk">17</div>
-        <div class="desk">18</div>
-        <!-- Baris 4 -->
-        <div class="desk">19</div>
-        <div class="desk">20</div>
-        <div class="desk">21</div>
-        <div class="desk">22</div>
-        <div class="desk">23</div>
-        <div class="desk">24</div>
-        <!-- Baris 5 -->
-        <div class="desk">25</div>
-        <div class="desk">26</div>
-        <div class="desk">27</div>
-        <div class="desk">28</div>
-        <div class="desk">29</div>
-        <div class="desk">30</div>
-        <!-- Baris 6 -->
-        <div class="desk">31</div>
-        <div class="desk">32</div>
-        <div class="desk">33</div>
-        <div class="desk">34</div>
-        <div class="desk">35</div>
-        <div class="desk">36</div>
-      </div>
-
-      <!-- Label Kanan -->
-      <div class="labels">
-        <div class="num">1</div>
-        <div class="num">7</div>
-        <div class="num">13</div>
-        <div class="num">19</div>
-        <div class="num">25</div>
-        <div class="num">31</div>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    © 2025 Denah Kelas – Dibuat dengan ❤️
-  </footer>
-</body>
-</html>      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     }
     .teacher {
       grid-column: span 6;
